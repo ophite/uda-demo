@@ -29,3 +29,4 @@ styleguide
 *.bak.*
 *.zip
 src/apps
+artifacts
