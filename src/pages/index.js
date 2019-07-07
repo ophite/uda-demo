@@ -9,6 +9,6 @@ const Title = styled.h1`
 
 export default () => (
   <div style={{ textAlign: 'center' }}>
-    <Title>Welcome to React-Static Test2</Title>
+    <Title>Welcome to React-Static Styled Components</Title>
   </div>
 )
