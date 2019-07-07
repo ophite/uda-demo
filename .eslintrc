@@ -1,0 +1,101 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "jest"
+  ],
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "settings": {
+    "ecmascript": 6
+  },
+  "rules": {
+    "no-continue": 0,
+    "no-nested-ternary": 0,
+    "arrow-body-style": 0,
+    "camelcase": 0,
+    "class-methods-use-this": 0,
+    "jsx-quotes": [
+      2,
+      "prefer-single"
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-dynamic-require": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": ["error", "ignorePackages", {
+      "js": "never",
+      "mjs": "never",
+      "jsx": "never"
+    }],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": 0,
+    "global-require": 0,
+    "max-len": [
+      "error",
+      300
+    ],
+    "react/no-danger": 0,
+    "no-bitwise": 0,
+    "no-plusplus": 0,
+    "no-console": 1,
+    "no-restricted-syntax": 0,
+    "no-underscore-dangle": 0,
+    "import/no-named-as-default": 0,
+    "react/no-find-dom-node": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-curly-spacing": [
+      2,
+      "always"
+    ],
+    "react/jsx-no-bind": [
+      0,
+      {
+        "allowBind": true,
+        "allowArrowFunctions": true
+      }
+    ],
+    "react/forbid-prop-types": [
+      "error",
+      {
+        "forbid": []
+      }
+    ],
+    "react/no-array-index-key": 0,
+    "react/no-did-update-set-state": 0,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error",
+    "jsx-a11y/no-autofocus": 0,
+    "no-unused-vars": [
+        "error",
+        {
+            "varsIgnorePattern": "React"
+        }
+    ],
+
+  }
+}
