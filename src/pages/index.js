@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -8,7 +8,7 @@ const Title = styled.h1`
 `;
 
 export default () => (
-  <div style={{ textAlign: 'center' }}>
+  <div style={ { textAlign: 'center' } }>
     <Title>Welcome to React-Static Styled Components</Title>
   </div>
-)
+);

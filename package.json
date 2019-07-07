@@ -7,7 +7,9 @@
     "build": "react-static build",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000",
-    "deploy": "netlify deploy"
+    "deploy": "netlify deploy",
+    "js_lint": "eslint ./src ./*.js -f table --ext .js --ext .jsx",
+    "esfix": "eslint ./src ./*.js --ext .js --fix && stylelint src/**/*.css --fix"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -27,6 +29,7 @@
     "eslint": "5.x",
     "eslint-config-react-app": "^3.0.8",
     "eslint-config-react-tools": "1.x.x",
+    "eslint-plugin-jest": "^22.7.2",
     "eslint-plugin-flowtype": "2.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",

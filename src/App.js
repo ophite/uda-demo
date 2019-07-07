@@ -1,14 +1,14 @@
-import React from 'react'
-import { Root, Routes, addPrefetchExcludes } from 'react-static'
+import React from 'react';
+import { Root, Routes, addPrefetchExcludes } from 'react-static';
 //
-import { Link, Router } from 'components/Router'
-import Dynamic from 'containers/Dynamic'
-import styled, { createGlobalStyle } from 'styled-components'
+import { Link, Router } from 'components/Router';
+import Dynamic from 'containers/Dynamic';
+import styled, { createGlobalStyle } from 'styled-components';
 
 // import './app.css'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic'])
+addPrefetchExcludes(['dynamic']);
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 100;
   }
-`
+`;
 const AppStyles = styled.div`
   a {
     text-decoration: none;
@@ -41,29 +41,29 @@ const AppStyles = styled.div`
   img {
     max-width: 100%;
   }
-`
+`;
 function App() {
   return (
     <Root>
       <AppStyles>
         <GlobalStyle />
         <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/blog'>Blog</Link>
+          <Link to='/dynamic'>Dynamic</Link>
         </nav>
-        <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Dynamic path="dynamic" />
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
+        <div className='content'>
+          <React.Suspense fallback={ <em>Loading...</em> }>
+            <Router>
+              <Dynamic path='dynamic' />
+              <Routes path='*' />
+            </Router>
+          </React.Suspense>
         </div>
       </AppStyles>
     </Root>
-  )
+  );
 }
 
-export default App
+export default App;
