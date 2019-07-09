@@ -30,3 +30,4 @@ styleguide
 *.zip
 src/apps
 artifacts
+tmp
