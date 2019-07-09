@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 100;
   }
 `;
+
 const AppStyles = styled.div`
   a {
     text-decoration: none;
@@ -42,6 +43,7 @@ const AppStyles = styled.div`
     max-width: 100%;
   }
 `;
+
 function App() {
   return (
     <Root>
@@ -50,8 +52,8 @@ function App() {
         <nav>
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
-          <Link to='/blog'>Blog</Link>
-          <Link to='/dynamic'>Dynamic</Link>
+          <Link to='/blog'>*Blog</Link>
+          <Link to='/dynamic'>*Dynamic</Link>
         </nav>
         <div className='content'>
           <React.Suspense fallback={ <em>Loading...</em> }>
