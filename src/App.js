@@ -1,8 +1,9 @@
 import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
 //
-import { Link, Router } from 'components/Router';
+import { Router } from 'components/Router';
 import Dynamic from 'containers/Dynamic';
+import HeaderMenu from 'components/HeaderMenu.component';
 import styled, { createGlobalStyle } from 'styled-components';
 
 // import './app.css'
@@ -49,12 +50,7 @@ function App() {
     <Root>
       <AppStyles>
         <GlobalStyle />
-        <nav>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/blog'>*Blog</Link>
-          <Link to='/dynamic'>*Dynamic</Link>
-        </nav>
+        <HeaderMenu />
         <div className='content'>
           <React.Suspense fallback={ <em>Loading...</em> }>
             <Router>
