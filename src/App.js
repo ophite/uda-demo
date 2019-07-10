@@ -1,8 +1,9 @@
 import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
 //
-import { Link, Router } from 'components/Router';
+import { Router } from 'components/Router';
 import Dynamic from 'containers/Dynamic';
+import HeaderMenu from 'components/HeaderMenu.component';
 import styled, { createGlobalStyle } from 'styled-components';
 
 // import './app.css'
@@ -20,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 100;
   }
 `;
+
 const AppStyles = styled.div`
   a {
     text-decoration: none;
@@ -42,17 +44,13 @@ const AppStyles = styled.div`
     max-width: 100%;
   }
 `;
+
 function App() {
   return (
     <Root>
       <AppStyles>
         <GlobalStyle />
-        <nav>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/blog'>Blog</Link>
-          <Link to='/dynamic'>Dynamic</Link>
-        </nav>
+        <HeaderMenu />
         <div className='content'>
           <React.Suspense fallback={ <em>Loading...</em> }>
             <Router>
