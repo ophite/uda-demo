@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 
 const HelmetComponent = (props) => {
+  if (!props) {
+    debugger
+  }
   return (
     <Helmet>
       {/* meta */}
