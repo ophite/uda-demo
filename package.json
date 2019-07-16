@@ -14,13 +14,17 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "lodash": "^4.17.14",
     "react": "^16.8.2",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.2",
     "react-static": "^7.0.0",
     "react-static-plugin-reach-router": "^7.0.0",
     "react-static-plugin-sitemap": "^7.0.0",
     "react-static-plugin-source-filesystem": "^7.0.0",
     "react-static-plugin-styled-components": "^7.0.10",
+    "react-table": "^6.10.0",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
@@ -29,9 +33,9 @@
     "eslint": "5.x",
     "eslint-config-react-app": "^3.0.8",
     "eslint-config-react-tools": "1.x.x",
-    "eslint-plugin-jest": "^22.7.2",
     "eslint-plugin-flowtype": "2.x",
     "eslint-plugin-import": "2.x",
+    "eslint-plugin-jest": "^22.7.2",
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
     "serve": "10.1.2"
