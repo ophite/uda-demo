@@ -1,0 +1,36 @@
+
+
+
+.navbar-purple {
+  background: #4a62ff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .07);
+}
+
+@media (min-width: 768px) {
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+}
+nav a {
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.buy-token {
+  margin-right: 25px;
+
+}
+.app-header {
+  padding-top: 0;
+}
+.content {
+  padding-top: 80px;
+}
+.creative-banner {
+ min-height: 768px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}

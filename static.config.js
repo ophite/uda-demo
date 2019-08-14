@@ -9,6 +9,26 @@ export default {
 
     return [
       {
+        path: '/buy-instagram-likes-sites',
+        template: 'src/pages/instagram/buy-instagram-likes',
+      },
+      {
+        path: '/buy-instagram-followers-sites',
+        template: 'src/pages/instagram/buy-instagram-followers',
+      },
+      {
+        path: '/free-instagram-likes-sites',
+        template: 'src/pages/instagram/free-instagram-likes',
+      },
+      {
+        path: '/free-instagram-followers-sites',
+        template: 'src/pages/instagram/free-instagram-followers',
+      },
+      {
+        path: '/free-instagram-views-sites',
+        template: 'src/pages/instagram/free-instagram-views',
+      },
+      {
         path: '/blog',
         getData: () => ({
           posts,
