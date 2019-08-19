@@ -19,6 +19,8 @@ Table of contents
 /*-------------------------------
 typography
 -------------------------------*/
+@import "blocks/test.css";
+
 body
 {
     font-family: 'Roboto Slab', serif;
@@ -475,23 +477,6 @@ app header
 {
     color: #4bc3c3;
     background: transparent;
-}
-.app-header .nav-item .dropdown-menu:before
-{
-    font-family: fontawesome;
-    font-size: 25px;
-
-    position: absolute;
-    top: -22px;
-    bottom: -15px;
-    left: 15%;
-
-    height: 22px;
-    margin-left: -7px;
-
-    content: '\f0d8';
-
-    color: #3c434f;
 }
 .app-header .navbar-collapse
 {
@@ -1058,7 +1043,7 @@ steps
     -webkit-animation: moving 1s linear infinite;
             animation: moving 1s linear infinite;
 
-    background: url(assets/img/line.png) repeat 0 0;
+    background: url(../img/line.png) repeat 0 0;
 }
 
 @-webkit-keyframes moving
@@ -1101,7 +1086,7 @@ steps
     -webkit-animation: moving 1s linear infinite;
             animation: moving 1s linear infinite;
 
-    background: url(assets/img/line.png) repeat 0 0;
+    background: url(../img/line.png) repeat 0 0;
 }
 .js_steps_carousel .owl-dots .owl-dot:nth-child(3):after,
 .js_steps_carousel .owl-dots .owl-dot:nth-child(4):after
@@ -2665,6 +2650,10 @@ responsive style
 
 @media (max-width: 767px)
 {
+    .navbar-toggler{
+        margin-right: 20px;
+
+    }
     .navbar-brand img
     {
         height: 35px;
@@ -2675,7 +2664,8 @@ responsive style
     }
     .navbar-toggler-icon
     {
-        height: auto;
+        height: 2px;
+        background: #fff;
     }
     .buy-token
     {

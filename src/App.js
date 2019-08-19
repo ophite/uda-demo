@@ -6,8 +6,8 @@ import Dynamic from 'containers/Dynamic';
 import HeaderMenu from 'components/HeaderMenu.component';
 import Footer from 'components/Footer.component';
 import styled, { createGlobalStyle } from 'styled-components';
-import './main-theme.css';
-import './app--end.css';
+import './assets/css/main-theme.css';
+import './assets/css/app--end.css';
 
 
 // Any routes that start with 'dynamic' will be treated as non-static routes

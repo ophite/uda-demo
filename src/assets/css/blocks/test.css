@@ -1,0 +1,6 @@
+.test {
+    background: orange;
+    &__test {
+    background: red;
+    }
+}

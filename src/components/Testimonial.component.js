@@ -6,16 +6,23 @@ import person3 from './../assets/img/testimonial/person-1.jpg'
 
 const TestimonialWrapper = styled.div`
     padding: 80px 0;
-    display: flex;
-    justify-content: space-between;
+    
     min-height:  600px;
     color: #000;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
     
     .testimonial {
       background: #fff;
-      border-radius: 2px;
-      width: 30%;
+      border-radius: 8px;
       padding: 0 24px 24px ;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  
+      @media (min-width: 768px) {
+        width: 30%;
+      }
       
       &__person {
         border-radius: 50%;
@@ -26,6 +33,7 @@ const TestimonialWrapper = styled.div`
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       }    
       &__person-img {
         max-width: 100%;

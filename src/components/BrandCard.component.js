@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
-
+import styled from 'styled-components';
 
 
 const FreeInstagramLikesWrapper = styled.section`
@@ -90,9 +88,7 @@ const FreeInstagramLikesWrapper = styled.section`
 
 
 const BrandCardComponent = (props) => {
-  if (!props) {
-    debugger;
-  }
+
   return (
     <FreeInstagramLikesWrapper>
       <div className="brand-card">
